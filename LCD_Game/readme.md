@@ -1,4 +1,8 @@
 Basic LCD Game
 
-![alt text](https://github.com/Atif-Ahmad/Arduino/blob/main/LCD_Game/game_schmatic.png)
+This game is a simple collision avoidance game on a 2x16 liquid crystal display. The player can only move up or down to avoid obstacles coming towards them. There are, at most, two obstacles on the screen at a time. Every time the player successfully avoids an obstacle, the score increases, and after a specific score, the game speeds up. The game is controlled by four buttons with an active buzzer for sound effects. The game has a start menu, can be paused, and has a game over screen. The game keeps track of your high score and while playing the game displays your score in the riughtmost columns of the liquid crystal display. 
 
+![alt text](https://github.com/Atif-Ahmad/Arduino/blob/main/LCD_Game/game_schmatic.png)
+Schematic was made using Fritzing.
+
+The liquid crystal display is for showing the gameboard as the user performs different actions. The wiring of the LCD can be found on the official arduino website: https://docs.arduino.cc/learn/electronics/lcd-displays/. The LCD uses the LiquidCrystal.h header file, which is included here. There are four buttons towards the right. The leftmost button is for starting the game and resuming if paused. The second and third buttons are involved in moving the player up or down, respectively. The rightmost button is used for pausing the game. Each of the wires are connected diagonally because the bottom left legs and top right legs are connected to each other. There is also an active buzzer used to play sounds. The buzzer works through an input voltage and time delay. It also plays a sound at the start menu and at the game over screen.
