@@ -6,4 +6,3 @@ The LCD Alarm code contains the main file, two support libraries, and two images
 The code in Speaker is a simple program that plays a tune. This is from one of Arduino's tutorials.
 
 The programs in basic_circuits explore some of the basic components that come with the Arduino. 
-
