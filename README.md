@@ -1,10 +1,11 @@
 Schematic:
 ![alt text](https://github.com/Atif-Ahmad/Arduino/blob/acd2c956b93e17cbe44359e6686bafc744fe3d8c/Schematic.png)
 
+```
 Example board:
-
-P - + + + + - - - - - - + + 0 0
+> - + + + + - - - - - - + + 0 0
 - - - - - - - - + + - - - - L 3
+```
 
 I decided to implement a simple obstacle avoidance game. The input would be the 4x4 keypad. The output/display would be the 16x2 LCD. The features of my game included the gameplay, start/pause/load screens, and the ability to save and load your game in different states using the atmega's EEPROM. The game idea is very simple. The player is placed on the leftmost column and can only move up or down. Obstacles vary in length from 2 to 5 characters. The speed is slow at first, but as the player scores more points the speed increases. The player has 3 lives, and when they collide with an obstacle they lose health until game over. Due to the limited size of the LCD the max score is 99. The game is played on a 16x2 LCD.
 
