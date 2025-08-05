@@ -5,6 +5,7 @@ Example board:
 > - + + + + - - - - - - + + 0 0
 - - - - - - - - + + - - - - L 3
 
+
 I decided to implement a simple obstacle avoidance game. The input would be the 4x4 keypad. The output/display would be the 16x2 LCD. The features of my game included the gameplay, start/pause/load screens, and the ability to save and load your game in different states using the atmega's EEPROM. The game idea is very simple. The player is placed on the leftmost column and can only move up or down. Obstacles vary in length from 2 to 5 characters. The speed is slow at first, but as the player scores more points the speed increases. The player has 3 lives, and when they collide with an obstacle they lose health until game over. Due to the limited size of the LCD the max score is 99. The game is played on a 16x2 LCD.
 
 To implement obstacles, I first created an Obstacle struct which contained information like location and length. I then had a global array of obstacles (with a max size of 10, although max only 4-5 obstacles could fit on the board). To generate an obstacle, I made sure there were enough clear spaces so that when the obstacles came towards the player, they were able to avoid them. I randomly generated the obstacle’s row and length (ranging from 2+ to 5+). Once generated, I added them to the global obstacle container. Thus, shifting was just a matter of going through the obstacle array, with appropriate collision detection. Once obstacle left the screen, I removed it from the obstacle array.
