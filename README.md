@@ -1,4 +1,3 @@
-Schematic:
 ![alt text](https://github.com/Atif-Ahmad/Arduino/blob/acd2c956b93e17cbe44359e6686bafc744fe3d8c/Schematic.png)
 
 ```
